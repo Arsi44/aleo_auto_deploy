@@ -25,7 +25,12 @@ https://aleo.tools/
 Ждём ответа от бота и копируем адрес транзакции:![img_1.png](img_1.png)
 
 ### 4. Запустить файл aleo_deploy.sh и ввесть данные для деплоя контракта
-chmod +x aleo_deploy.sh && ./aleo_deploy.sh
+chmod +x aleo_deploy.sh 
+./aleo_deploy.sh $PK $VK $ADDRESS $QUOTE_LINK $NAME
+
+
+Пример команды:
+`./aleo_deploy.sh APrivateKey1z.. AViewKey1r.. aleo1l3.. https://vm.aleo.org/api/testnet3/transaction/at1.. octopus_space`
 
 
 ### На этом все! Мы выполнили деплой смартконтракта!
