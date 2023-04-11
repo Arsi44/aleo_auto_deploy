@@ -1,3 +1,4 @@
+# Деплой смартконтракта
 ### 1. Перед началом работы необходимо установить зависимости:
 
 apt update && apt install make clang pkg-config libssl-dev build-essential gcc xz-utils git curl vim tmux ntp jq llvm ufw -y
@@ -30,7 +31,16 @@ chmod +x aleo_deploy.sh
 
 
 Пример команды:
-`./aleo_deploy.sh APrivateKey1z.. AViewKey1r.. aleo1l3.. https://vm.aleo.org/api/testnet3/transaction/at1.. octopus_space`
+`./aleo_deploy.sh APrivateKey1z.. AViewKey1r.. aleo1l3.. https://vm.aleo.org/api/testnet3/transaction/at1.. octopus_space_contract`
 
 
 ### На этом все! Мы выполнили деплой смартконтракта!
+
+
+
+# Вызов смартконтракта
+Чтобы вызвать смартконтракт, нужно указать его имя и ваш Private Key, как входные параметры(всего 2 параметра):
+
+Пример команды:
+`./aleo_call_contract.sh octopus_space_contract APrivateKey1...`
+
